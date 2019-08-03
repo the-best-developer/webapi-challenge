@@ -25,14 +25,19 @@ In this challenge, create a web API around the following resources: `Projects` a
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Mention two parts of Express that you learned about this week.
+    A: Routing, to compartmentalize code and sections of the api. And middleware, to read, write, or modify data in transit.
 
 - [ ] Describe Middleware?
+    A: Middleware is used to manipulate data in transit and preform actions based on the data. An example would be to validate data before it is added to a database.
 
 - [ ] Describe a Resource?
+    A: resource is any external data that will be handled by our application. An example would be data listing items, or posting a username for login authentication.
 
 - [ ] What can the API return to help clients know if a request was successful?
+    A: A status code, particularly 200. Status codes report on the status of the server when using CRUD commands.
 
 - [ ] How can we partition our application into sub-applications?
+    A: By using Routes. Routes are used for seperating multiple parts of a website into sub-domains. An example would be a route for website.com/api/example or website.com/this/example.
 
 ## Project Setup
 
