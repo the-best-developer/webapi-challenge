@@ -127,13 +127,6 @@ router.post('/:id/actions', validateAction, (req, res) => {
 //  ##########
 //  ##########
 
-function validateProject(req, res, next) {
-    if ((req.body.name === undefined || req.body.description === undefined)) {
-        res.status(400).json({ message: "missing required name or description field" });
-    }
-    next();
-};
-
 function validateAction(req, res, next) {
     
     console.log(req.body.description.length)
